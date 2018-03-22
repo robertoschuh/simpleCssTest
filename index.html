@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="container-fluid main">
+    <div class="row">
+        <div class="col-4" style="background-color: aqua">
+            <div class="row">
+                <div class="col-sm">
+                    Pages <i class="plus"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm left_bottom">
+                    <ul id="sortable">
+                        <li class="ui-state-default">Item 1<span class="check"></span></li>
+                        <li class="ui-state-default">Item 2<span class="check"></span></li>
+                        <li class="ui-state-default">Item 3<span class="check"></span></li>
+                        <li class="ui-state-default">Item 4<span class="check"></span></li>
+                        <li class="ui-state-default">Item 5<span class="check"></span></li>
+                        <li class="ui-state-default">Item 6<span class="check"></span></li>
+                        <li class="ui-state-default">Item 7<span class="check"></span></li>
+                    </ul>
+
+
+                </div>
+            </div>
+
+        </div> <!-- end left_column -->
+
+        <div class="col-8" style="background-color: chartreuse;">
+            <div class="row">
+                <div class="col-sm right_top">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Page Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Page Content</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit leo ipsum, non placerat orci elementum at. Pellentesque leo quam, dapibus at vestibulum sit amet, blandit ac lorem. Maecenas vel nunc eget leo vulputate aliquet. Curabitur nec bibendum diam. Donec iaculis nibh in tellus tincidunt aliquam. Ut vitae elit eu turpis maximus viverra. Donec a ligula nunc. Duis accumsan metus eu elit porttitor, at viverra lectus ultrices. Quisque vitae nunc nisi.
+
+                    Sed convallis, tellus vel mattis finibus, massa ligula consectetur nisl, nec facilisis est eros vitae massa. Integer posuere in e
+                </div>
+            </div>
+
+        </div> <!-- end right column -->
+
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <input type="text" name="search" />
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript">
+    $( function() {
+        $( "#sortable" ).sortable();
+        $( "#sortable" ).disableSelection();
+    } );
+</script>
+</body>
+</html>

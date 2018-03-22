@@ -1,0 +1,93 @@
+
+html,body{height:100%;}
+
+.main {
+
+    height: 100%;
+}
+
+.content {
+    background: #ffffff;
+}
+
+.right_column{
+    height: 100%;
+    min-height: 900px;
+    border-left: 1px solid;
+}
+
+.left_column {
+    height: 100%;
+    background: #dde2eb;
+    padding: 0;
+}
+.left_bottom {
+
+    height: 100%;
+
+}
+
+.right_top {
+    background: #ccc;
+}
+
+.right_bottom {
+    background: #fff;
+}
+
+/* icons */
+.plus {
+    background-image: url("../images/plus.png");
+    background-repeat: no-repeat;
+    min-height: 78px;
+    min-width:78px;
+    float: right;
+}
+.delete {
+    background: url(../images/delete.png) #fff 50% 10%;
+    background-repeat: no-repeat;
+    min-height: 14px;
+    min-width: 50px;
+    float: right;
+    top: 10px;
+    position: relative;
+}
+
+ul#sortable li::before {
+    content: "";
+    float: left;
+    margin: 12px 10px;
+    background: url(../images/li_img.png);
+    min-width: 14px;
+    min-height: 10px;
+}
+ul#sortable li .check {
+    float: right;
+    background: url(../images/checkbox.png) no-repeat;
+
+    text-align:right;
+    display: inline-block;
+}
+ul#sortable {
+    width: 100%;
+}
+ul#sortable li {
+    background: #fff;
+    height: auto;
+}
+/* menu */
+.mb-3{
+    margin-bottom: 0 !important;
+    background:#fff;
+}
+
+/* overridings */
+.left_bottom .input-group-text, .left_bottom .form-control {
+
+    border: 0px !important;
+}
+
+/* sortable */
+#sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+#sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+#sortable li span { position: absolute; margin-left: -1.3em; }
